@@ -10,38 +10,22 @@ import {
   ColumnFiltersState,
 } from '@tanstack/react-table';
 import styles from './styles.module.css';
+import resourcesData from '@site/static/resources.json';
 
-// Define the data type
 type Resource = {
   id: number;
   name: string;
   category: string;
-  status: string;
-  value: number;
-  date: string;
+  sport: string;
+  url: string;
+  description: string;
 };
 
-// Fake data
-const defaultData: Resource[] = [
-  { id: 1, name: 'Basketball Analytics', category: 'Sports', status: 'Active', value: 1250, date: '2024-01-15' },
-  { id: 2, name: 'Football Metrics', category: 'Sports', status: 'Active', value: 3400, date: '2024-02-20' },
-  { id: 3, name: 'Baseball Stats', category: 'Sports', status: 'Inactive', value: 890, date: '2024-03-10' },
-  { id: 4, name: 'Soccer Analysis', category: 'Sports', status: 'Active', value: 2100, date: '2024-01-25' },
-  { id: 5, name: 'Tennis Tracker', category: 'Sports', status: 'Active', value: 1675, date: '2024-02-14' },
-  { id: 6, name: 'Hockey Data', category: 'Sports', status: 'Pending', value: 950, date: '2024-03-05' },
-  { id: 7, name: 'Golf Performance', category: 'Sports', status: 'Active', value: 1820, date: '2024-01-30' },
-  { id: 8, name: 'Swimming Records', category: 'Sports', status: 'Inactive', value: 720, date: '2024-02-28' },
-  { id: 9, name: 'Track & Field', category: 'Sports', status: 'Active', value: 1450, date: '2024-03-12' },
-  { id: 10, name: 'Volleyball Stats', category: 'Sports', status: 'Pending', value: 1100, date: '2024-02-08' },
-];
+const defaultData: Resource[] = resourcesData.resources;
 
 const columnHelper = createColumnHelper<Resource>();
 
 const columns = [
-  columnHelper.accessor('id', {
-    header: 'ID',
-    cell: info => info.getValue(),
-  }),
   columnHelper.accessor('name', {
     header: 'Name',
     cell: info => info.getValue(),
@@ -50,17 +34,21 @@ const columns = [
     header: 'Category',
     cell: info => info.getValue(),
   }),
-  columnHelper.accessor('status', {
-    header: 'Status',
+  columnHelper.accessor('sport', {
+    header: 'Sport',
     cell: info => info.getValue(),
   }),
-  columnHelper.accessor('value', {
-    header: 'Value',
-    cell: info => `$${info.getValue().toLocaleString()}`,
-  }),
-  columnHelper.accessor('date', {
-    header: 'Date',
+  columnHelper.accessor('description', {
+    header: 'Description',
     cell: info => info.getValue(),
+  }),
+  columnHelper.accessor('url', {
+    header: 'Link',
+    cell: info => (
+      <a href={info.getValue()} target="_blank" rel="noopener noreferrer">
+        {info.getValue()}
+      </a>
+    ),
   }),
 ];
 
@@ -101,7 +89,10 @@ export default function ResourcesTable(): React.ReactElement {
           {table.getHeaderGroups().map(headerGroup => (
             <tr key={headerGroup.id}>
               {headerGroup.headers.map(header => (
-                <th key={header.id}>
+                <th
+                  key={header.id}
+                  style={{ width: header.getSize() }}
+                >
                   {header.isPlaceholder ? null : (
                     <div
                       className={header.column.getCanSort() ? styles.sortable : ''}
@@ -126,7 +117,10 @@ export default function ResourcesTable(): React.ReactElement {
           {table.getRowModel().rows.map(row => (
             <tr key={row.id}>
               {row.getVisibleCells().map(cell => (
-                <td key={cell.id}>
+                <td
+                  key={cell.id}
+                  style={{ width: cell.column.getSize() }}
+                >
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
                 </td>
               ))}

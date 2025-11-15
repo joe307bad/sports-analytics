@@ -1,0 +1,252 @@
+{
+  "resources": [
+    {
+      "id": 1,
+      "name": "Real - Social live sports (Android)",
+      "category": "Apps",
+      "sport": "All sports",
+      "description": "Social live sports app for Android",
+      "url": "https://play.google.com/store/apps/details?id=vg.real&hl=en_US"
+    },
+    {
+      "id": 2,
+      "name": "Real - Social live sports (iOS)",
+      "category": "Apps",
+      "sport": "All sports",
+      "description": "Social live sports app for iOS",
+      "url": "https://apps.apple.com/us/app/real-sports/id1514546162"
+    },
+    {
+      "id": 3,
+      "name": "Plain Text Sports",
+      "category": "Websites",
+      "sport": "All sports",
+      "description": "Fast, ad free box scores",
+      "url": "https://plaintextsports.com/"
+    },
+    {
+      "id": 4,
+      "name": "StatMuse",
+      "category": "Websites",
+      "sport": "All sports",
+      "description": "Query stats using natural language",
+      "url": "https://statmuse.com"
+    },
+    {
+      "id": 5,
+      "name": "Inpredictable",
+      "category": "Websites",
+      "sport": "All sports",
+      "description": "Comprehensive rankings and stats for many sports",
+      "url": "https://www.inpredictable.com"
+    },
+    {
+      "id": 6,
+      "name": "DSA Labs",
+      "category": "Websites",
+      "sport": "All sports",
+      "description": "Rankings and simulators for many major sports",
+      "url": "https://www.dsa-labs.com/rankings"
+    },
+    {
+      "id": 7,
+      "name": "Sumer Brain",
+      "category": "Websites",
+      "sport": "NFL",
+      "description": "ChatGPT for NFL stats",
+      "url": "https://sumersports.com/sumerbrain/"
+    },
+    {
+      "id": 8,
+      "name": "nfeloapp",
+      "category": "Websites",
+      "sport": "NFL",
+      "description": "Data Driven NFL Predictions",
+      "url": "https://www.nfeloapp.com/"
+    },
+    {
+      "id": 9,
+      "name": "RBSDM",
+      "category": "Websites",
+      "sport": "NFL",
+      "description": "Advanced box scores for every NFL game",
+      "url": "https://rbsdm.com/"
+    },
+    {
+      "id": 10,
+      "name": "CFB Text",
+      "category": "Websites",
+      "sport": "CFB",
+      "description": "Free, ad free box scores (inspired by plaintextsports)",
+      "url": "https://cfbtxt.com/"
+    },
+    {
+      "id": 11,
+      "name": "MLB Pitch Profiler",
+      "category": "Websites",
+      "sport": "Baseball",
+      "description": "Advanced pitcher stats for specific games",
+      "url": "https://www.mlbpitchprofiler.com/"
+    },
+    {
+      "id": 12,
+      "name": "Baseball Savant",
+      "category": "Websites",
+      "sport": "Baseball",
+      "description": "Baseball stats on everything imaginable",
+      "url": "https://baseballsavant.mlb.com/"
+    },
+    {
+      "id": 13,
+      "name": "Texas Leaguers Spin",
+      "category": "Websites",
+      "sport": "Baseball",
+      "description": "Pitch spin visualizer",
+      "url": "https://scout.texasleaguers.com/spin"
+    },
+    {
+      "id": 14,
+      "name": "NHL Savant",
+      "category": "Websites",
+      "sport": "Hockey",
+      "description": "NHL analytics, betting, and stats platform",
+      "url": "https://dpk1212.github.io/nhl-savant/#/"
+    },
+    {
+      "id": 15,
+      "name": "Evollve",
+      "category": "Websites",
+      "sport": "College Volleyball",
+      "description": "Advanced stats for college volleyball",
+      "url": "https://evollve.net/"
+    },
+    {
+      "id": 16,
+      "name": "Agent MMA",
+      "category": "Websites",
+      "sport": "UFC/MMA",
+      "description": "MMA/UFC stats on individual fighters and matches",
+      "url": "https://agentmma.com/"
+    },
+    {
+      "id": 17,
+      "name": "Sports Data Verse",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Open source sports analytics and data organization",
+      "url": "https://www.sportsdataverse.org/"
+    },
+    {
+      "id": 18,
+      "name": "CRAN Sports Analytics",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Comprehensive list of R packages targeted at sports analytics",
+      "url": "https://cran.r-project.org/web/views/SportsAnalytics.html"
+    },
+    {
+      "id": 19,
+      "name": "nflverse",
+      "category": "Coding Packages",
+      "sport": "NFL",
+      "description": "General NFL stats",
+      "url": "https://nflverse.nflverse.com/"
+    },
+    {
+      "id": 20,
+      "name": "nflseedR",
+      "category": "Coding Packages",
+      "sport": "NFL",
+      "description": "Simulate NFL seasons",
+      "url": "https://nflseedr.com/"
+    },
+    {
+      "id": 21,
+      "name": "nflfastR",
+      "category": "Coding Packages",
+      "sport": "NFL",
+      "description": "NFL play by play data",
+      "url": "https://nflfastr.com/"
+    },
+    {
+      "id": 22,
+      "name": "MLB-StatsAPI",
+      "category": "Coding Packages",
+      "sport": "MLB",
+      "description": "MLB stats API wrapper",
+      "url": "https://github.com/toddrob99/MLB-StatsAPI"
+    },
+    {
+      "id": 23,
+      "name": "NFLverse Discord",
+      "category": "Communities",
+      "sport": "NFL",
+      "description": "NFLverse community",
+      "url": "https://t.co/1ikOye0sAG"
+    },
+    {
+      "id": 24,
+      "name": "Michael MacKelvie",
+      "category": "Accounts to follow",
+      "sport": "All sports",
+      "description": "YouTube channel",
+      "url": "https://www.youtube.com/channel/UCkv6xZ98rkJjHZLtYlAqJmg"
+    },
+    {
+      "id": 25,
+      "name": "Ben Baldwin",
+      "category": "Accounts to follow",
+      "sport": "NFL",
+      "description": "The Athletic - X/Twitter",
+      "url": "https://x.com/benbbaldwin"
+    },
+    {
+      "id": 26,
+      "name": "Sam Hoppen",
+      "category": "Accounts to follow",
+      "sport": "NFL",
+      "description": "ESPN Bet - X/Twitter",
+      "url": "https://x.com/SamHoppen"
+    },
+    {
+      "id": 27,
+      "name": "Robby",
+      "category": "Accounts to follow",
+      "sport": "NFL",
+      "description": "Creator of nfelo - X/Twitter",
+      "url": "https://x.com/greerreNFL"
+    },
+    {
+      "id": 28,
+      "name": "Anthony Reinhard",
+      "category": "Accounts to follow",
+      "sport": "NFL",
+      "description": "statbutler.com - X/Twitter",
+      "url": "https://x.com/reinhardNFL"
+    },
+    {
+      "id": 29,
+      "name": "Sam Schwartzstein",
+      "category": "Accounts to follow",
+      "sport": "NFL",
+      "description": "Analytics expert for Prime Video and Thursday Night Football - X/Twitter",
+      "url": "https://x.com/schwartzsteins"
+    },
+    {
+      "id": 30,
+      "name": "Sam Bruchhaus",
+      "category": "Accounts to follow",
+      "sport": "NFL",
+      "description": "SumerSports - X/Twitter",
+      "url": "https://x.com/sambruchhaus"
+    },
+    {
+      "id": 31,
+      "name": "Sebastian",
+      "category": "Accounts to follow",
+      "sport": "NFL",
+      "description": "Maintains nflverse - X/Twitter",
+      "url": "https://x.com/mrcaseb"
+    }
+  ]
+}

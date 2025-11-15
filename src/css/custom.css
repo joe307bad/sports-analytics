@@ -28,3 +28,11 @@
   --ifm-color-primary-lightest: #fff;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 }
+
+.navbar__logo img {
+  border-radius: 8px;
+}
+
+.plugin-pages .footer {
+  display: none;
+}
