@@ -74,6 +74,7 @@ export default function ResourcesTable(): React.ReactElement {
   return (
     <div className={styles.tableContainer}>
       <div className={styles.filters}>
+        <h2 className={styles.resourcesTitle}>Resources</h2>
         <input
           type="text"
           placeholder="Filter by name..."
@@ -92,7 +93,7 @@ export default function ResourcesTable(): React.ReactElement {
                 {headerGroup.headers.map(header => (
                   <th
                     key={header.id}
-                    style={{ width: header.getSize(), position: "sticky", top: 0, zIndex: 999 }}
+                    style={{ width: header.getSize() }}
                   >
                     {header.isPlaceholder ? null : (
                       <div

@@ -12,9 +12,6 @@ export default function Home(): ReactNode {
       title={`${siteConfig.title}`}
       description="Sports Analytics Resources">
       <div className={styles.fullPageContainer}>
-        <div className={styles.header}>
-          <h1 className={styles.title}>Resources</h1>
-        </div>
         <div className={styles.tableWrapper}>
           <ResourcesTable />
         </div>
