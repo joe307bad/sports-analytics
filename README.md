@@ -1,41 +1,24 @@
-# Website
+# Sports Analytics
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+A curated collection of sports analytics tools and resources for data analysis, visualization, and insights.
 
-## Installation
+**Live site:** [spana.joebad.com](https://spana.joebad.com)
 
-```bash
-yarn
-```
+Built with [Docusaurus](https://docusaurus.io/) and deployed on [Fly.io](https://fly.io).
 
-## Local Development
+## Development
 
 ```bash
-yarn start
-```
+# Install dependencies
+yarn install
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+# Start dev server
+npm start
 
-## Build
-
-```bash
+# Build for production
 yarn build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
 ## Deployment
 
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Automatically deploys to Fly.io on push to `main` via GitHub Actions.
