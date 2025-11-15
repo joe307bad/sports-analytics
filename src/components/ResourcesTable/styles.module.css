@@ -43,14 +43,14 @@
   border-spacing: 0;
   font-size: 0.9rem;
   table-layout: fixed;
-  max-height: 100%;
+  max-height: calc(100% - 16px);
 }
 
 .table thead {
   background-color: #f5f5f5;
 }
 
-[data-theme='dark'] .table thead {
+[data-theme="dark"] .table thead {
   background-color: #2a2a2a;
 }
 
@@ -64,6 +64,55 @@
   white-space: nowrap;
 }
 
+.cellWrapper {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table th:first-child {
+  z-index: 12;
+}
+
+.table td:first-child {
+  z-index: 11;
+}
+
+.table td:first-child {
+  background-color: #ffffff;
+}
+
+.table th:first-child,
+.table td:first-child {
+  position: sticky;
+  left: 0;
+}
+
+[data-theme="dark"] .table td:first-child {
+  background-color: #1b1b1d;
+}
+
+@media (max-width: 768px) {
+  .table th,
+  .table td {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .table th:first-child,
+  .table td:first-child {
+    padding-left: 0.5rem;
+  }
+
+  .table th:last-child,
+  .table td:last-child {
+    padding-right: 0.5rem;
+  }
+
+  .cellWrapper {
+    max-width: 100px;
+  }
+}
+
 .table th {
   position: sticky;
   top: 0;
@@ -72,7 +121,7 @@
   box-shadow: 0 1px 0 0 #e0e0e0;
 }
 
-[data-theme='dark'] .table th {
+[data-theme="dark"] .table th {
   background-color: #2a2a2a;
   box-shadow: 0 1px 0 0 #444;
 }
@@ -87,8 +136,8 @@
   padding-right: 2rem;
 }
 
-[data-theme='dark'] .table th,
-[data-theme='dark'] .table td {
+[data-theme="dark"] .table th,
+[data-theme="dark"] .table td {
   border-bottom: 1px solid #444;
 }
 
@@ -105,15 +154,31 @@
   background-color: #ebebeb;
 }
 
-[data-theme='dark'] .sortable:hover {
+[data-theme="dark"] .sortable:hover {
   background-color: #333;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:nth-child(even) td:first-child {
+  background-color: #f9f9f9;
+}
+
+[data-theme="dark"] .table tbody tr:nth-child(even) {
+  background-color: #252525;
+}
+
+[data-theme="dark"] .table tbody tr:nth-child(even) td:first-child {
+  background-color: #252525;
 }
 
 .table tbody tr:hover {
   background-color: #fafafa;
 }
 
-[data-theme='dark'] .table tbody tr:hover {
+[data-theme="dark"] .table tbody tr:hover {
   background-color: #1a1a1a;
 }
 
@@ -124,6 +189,6 @@
   flex-shrink: 0;
 }
 
-[data-theme='dark'] .info {
+[data-theme="dark"] .info {
   color: #aaa;
 }

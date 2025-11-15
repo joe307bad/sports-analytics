@@ -28,11 +28,19 @@ const columnHelper = createColumnHelper<Resource>();
 const columns = [
   columnHelper.accessor('name', {
     header: 'Name',
-    cell: info => info.getValue(),
+    cell: info => (
+      <div className={styles.cellWrapper}>
+        {info.getValue()}
+      </div>
+    ),
   }),
   columnHelper.accessor('category', {
     header: 'Category',
-    cell: info => info.getValue(),
+    cell: info => (
+      <div className={styles.cellWrapper}>
+        {info.getValue()}
+      </div>
+    ),
   }),
   columnHelper.accessor('sport', {
     header: 'Sport',
@@ -130,10 +138,6 @@ export default function ResourcesTable(): React.ReactElement {
             ))}
           </tbody>
         </table>
-      </div>
-
-      <div className={styles.info}>
-        Showing {table.getRowModel().rows.length} of {data.length} rows
       </div>
     </div>
   );
