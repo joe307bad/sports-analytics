@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Sports Analytics Resources',
+  title: 'Sports Analytics',
   tagline: 'Curated collection of sports analytics tools and resources',
   favicon: 'img/favicon.ico',
 

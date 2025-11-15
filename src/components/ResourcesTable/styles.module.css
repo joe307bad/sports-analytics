@@ -8,7 +8,7 @@
 }
 
 .filters {
-  padding: 2rem 2rem 1rem 2rem;
+  padding: 1rem 1rem;
   flex-shrink: 0;
 }
 
@@ -19,6 +19,12 @@
   border-radius: 4px;
   width: 100%;
   max-width: 300px;
+}
+
+.tableWrapper {
+  flex: 1;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .table {
@@ -90,6 +96,7 @@
   padding: 1rem 2rem 2rem 2rem;
   font-size: 0.875rem;
   color: #666;
+  flex-shrink: 0;
 }
 
 [data-theme='dark'] .info {
