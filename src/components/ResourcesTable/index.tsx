@@ -63,24 +63,39 @@ const columns = [
 
 export default function ResourcesTable(): React.ReactElement {
   const [data] = React.useState<Resource[]>(defaultData);
-  const [sorting, setSorting] = React.useState<SortingState>([]);
 
-  // Initialize filters from URL params - computed once synchronously
-  const getInitialFilters = () => {
+  // Initialize filters and sorting from URL params - computed once synchronously
+  const getInitialState = () => {
     if (!ExecutionEnvironment.canUseDOM) {
-      return { name: '', category: '', sport: '' };
+      return { name: '', category: '', sport: '', sorting: [] };
     }
     const params = new URLSearchParams(window.location.search);
+    const sortingParam = params.get('sort');
+    let sorting: SortingState = [];
+
+    if (sortingParam) {
+      try {
+        const [id, desc] = sortingParam.split(':');
+        if (id) {
+          sorting = [{ id, desc: desc === 'desc' }];
+        }
+      } catch (e) {
+        // Invalid sorting param, use default
+      }
+    }
+
     return {
       name: params.get('name') || '',
       category: params.get('category') || '',
       sport: params.get('sport') || '',
+      sorting,
     };
   };
 
-  const [nameFilter, setNameFilter] = React.useState<string>(() => getInitialFilters().name);
-  const [categoryFilter, setCategoryFilter] = React.useState<string>(() => getInitialFilters().category);
-  const [sportFilter, setSportFilter] = React.useState<string>(() => getInitialFilters().sport);
+  const [nameFilter, setNameFilter] = React.useState<string>(() => getInitialState().name);
+  const [categoryFilter, setCategoryFilter] = React.useState<string>(() => getInitialState().category);
+  const [sportFilter, setSportFilter] = React.useState<string>(() => getInitialState().sport);
+  const [sorting, setSorting] = React.useState<SortingState>(() => getInitialState().sorting);
 
   // Build columnFilters from individual filter states - must be computed synchronously
   const columnFilters = React.useMemo(() => {
@@ -91,7 +106,7 @@ export default function ResourcesTable(): React.ReactElement {
     return filters;
   }, [nameFilter, categoryFilter, sportFilter]);
 
-  // Update URL params when filters change
+  // Update URL params when filters or sorting change
   React.useEffect(() => {
     if (!ExecutionEnvironment.canUseDOM) return;
 
@@ -99,13 +114,17 @@ export default function ResourcesTable(): React.ReactElement {
     if (nameFilter) params.set('name', nameFilter);
     if (categoryFilter) params.set('category', categoryFilter);
     if (sportFilter) params.set('sport', sportFilter);
+    if (sorting.length > 0) {
+      const sort = sorting[0];
+      params.set('sort', `${sort.id}:${sort.desc ? 'desc' : 'asc'}`);
+    }
 
     const newUrl = params.toString()
       ? `${window.location.pathname}?${params.toString()}`
       : window.location.pathname;
 
     window.history.replaceState({}, '', newUrl);
-  }, [nameFilter, categoryFilter, sportFilter]);
+  }, [nameFilter, categoryFilter, sportFilter, sorting]);
 
   // Get unique categories and sports from the data
   const categories = React.useMemo(() => {
