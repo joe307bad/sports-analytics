@@ -124,6 +124,13 @@ const config: Config = {
       },
       items: [
         {
+          href: '#',
+          position: 'right',
+          className: 'header-info-link',
+          'aria-label': 'What is this?',
+          label: 'What is this?',
+        },
+        {
           href: 'https://discord.gg/KtqmASc6jn',
           position: 'right',
           className: 'header-discord-link',
