@@ -13,7 +13,7 @@ Built with [Docusaurus](https://docusaurus.io/) and deployed on [Fly.io](https:/
 yarn install
 
 # Start dev server
-npm start
+yarn start
 
 # Build for production
 yarn build

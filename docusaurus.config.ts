@@ -125,8 +125,17 @@ const config: Config = {
       items: [
         {
           href: 'https://discord.gg/KtqmASc6jn',
-          label: 'Join the discord!',
           position: 'right',
+          className: 'header-discord-link',
+          'aria-label': 'Discord server',
+          label: 'Discord',
+        },
+        {
+          href: 'https://github.com/joe307bad/sports-analytics',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
+          label: 'Github',
         },
       ],
     },
