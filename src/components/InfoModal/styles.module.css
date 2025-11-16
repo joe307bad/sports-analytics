@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,8 +13,8 @@
 }
 
 .modalContent {
-  background: var(--ifm-background-color);
-  color: var(--ifm-font-color-base);
+  background: #ffffff !important;
+  color: var(--ifm-font-color-base) !important;
   border-radius: 8px;
   max-width: 600px;
   width: 100%;
@@ -23,6 +23,10 @@
   padding: 2rem;
   position: relative;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme='dark'] .modalContent {
+  background: #1b1b1d !important;
 }
 
 .closeButton {
