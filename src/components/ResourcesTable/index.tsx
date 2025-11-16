@@ -11,6 +11,7 @@ import {
 } from '@tanstack/react-table';
 import styles from './styles.module.css';
 import resourcesData from '@site/static/resources.json';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 type Resource = {
   id: number;
@@ -63,7 +64,59 @@ const columns = [
 export default function ResourcesTable(): React.ReactElement {
   const [data] = React.useState<Resource[]>(defaultData);
   const [sorting, setSorting] = React.useState<SortingState>([]);
-  const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>([]);
+
+  // Initialize filters from URL params - computed once synchronously
+  const getInitialFilters = () => {
+    if (!ExecutionEnvironment.canUseDOM) {
+      return { name: '', category: '', sport: '' };
+    }
+    const params = new URLSearchParams(window.location.search);
+    return {
+      name: params.get('name') || '',
+      category: params.get('category') || '',
+      sport: params.get('sport') || '',
+    };
+  };
+
+  const [nameFilter, setNameFilter] = React.useState<string>(() => getInitialFilters().name);
+  const [categoryFilter, setCategoryFilter] = React.useState<string>(() => getInitialFilters().category);
+  const [sportFilter, setSportFilter] = React.useState<string>(() => getInitialFilters().sport);
+
+  // Build columnFilters from individual filter states - must be computed synchronously
+  const columnFilters = React.useMemo(() => {
+    const filters: ColumnFiltersState = [];
+    if (nameFilter) filters.push({ id: 'name', value: nameFilter });
+    if (categoryFilter) filters.push({ id: 'category', value: categoryFilter });
+    if (sportFilter) filters.push({ id: 'sport', value: sportFilter });
+    return filters;
+  }, [nameFilter, categoryFilter, sportFilter]);
+
+  // Update URL params when filters change
+  React.useEffect(() => {
+    if (!ExecutionEnvironment.canUseDOM) return;
+
+    const params = new URLSearchParams();
+    if (nameFilter) params.set('name', nameFilter);
+    if (categoryFilter) params.set('category', categoryFilter);
+    if (sportFilter) params.set('sport', sportFilter);
+
+    const newUrl = params.toString()
+      ? `${window.location.pathname}?${params.toString()}`
+      : window.location.pathname;
+
+    window.history.replaceState({}, '', newUrl);
+  }, [nameFilter, categoryFilter, sportFilter]);
+
+  // Get unique categories and sports from the data
+  const categories = React.useMemo(() => {
+    const uniqueCategories = Array.from(new Set(defaultData.map(r => r.category)));
+    return uniqueCategories.sort();
+  }, []);
+
+  const sports = React.useMemo(() => {
+    const uniqueSports = Array.from(new Set(defaultData.map(r => r.sport)));
+    return uniqueSports.sort();
+  }, []);
 
   const table = useReactTable({
     data,
@@ -73,11 +126,16 @@ export default function ResourcesTable(): React.ReactElement {
       columnFilters,
     },
     onSortingChange: setSorting,
-    onColumnFiltersChange: setColumnFilters,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
   });
+
+  const clearAllFilters = () => {
+    setNameFilter('');
+    setCategoryFilter('');
+    setSportFilter('');
+  };
 
   return (
     <div className={styles.tableContainer}>
@@ -86,11 +144,42 @@ export default function ResourcesTable(): React.ReactElement {
         <input
           type="text"
           placeholder="Filter by name..."
-          onChange={e =>
-            table.getColumn('name')?.setFilterValue(e.target.value)
-          }
+          value={nameFilter}
+          onChange={e => setNameFilter(e.target.value)}
           className={styles.filterInput}
         />
+        <select
+          value={categoryFilter}
+          onChange={e => setCategoryFilter(e.target.value)}
+          className={styles.filterInput}
+        >
+          <option value="">Filter by Category</option>
+          {categories.map(category => (
+            <option key={category} value={category}>
+              {category}
+            </option>
+          ))}
+        </select>
+        <select
+          value={sportFilter}
+          onChange={e => setSportFilter(e.target.value)}
+          className={styles.filterInput}
+        >
+          <option value="">Filter by Sport</option>
+          {sports.map(sport => (
+            <option key={sport} value={sport}>
+              {sport}
+            </option>
+          ))}
+        </select>
+        <button
+          onClick={clearAllFilters}
+          className={styles.clearButton}
+          title="Clear all filters"
+          aria-label="Clear all filters"
+        >
+          ×
+        </button>
       </div>
 
       <div className={styles.tableWrapper}>

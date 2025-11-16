@@ -903,6 +903,22 @@
       "sport": "All sports",
       "description": "Multivariate generalized linear mixed models for ranking teams",
       "url": "https://CRAN.R-project.org/package=mvglmmRank"
+    },
+    {
+      "id": 114,
+      "name": "Analytics with Avery - Player Cards",
+      "category": "Websites",
+      "sport": "Hockey",
+      "description": "NHL player cards showing in depth stats on individual players",
+      "url": "https://analyticswithavery.com/player_cards"
+    },
+    {
+      "id": 115,
+      "name": "Darts Database",
+      "category": "Websites",
+      "sport": "Darts",
+      "description": "Darts Database is the ultimate source for darts results",
+      "url": "https://dartsdatabase.co.uk"
     }
   ]
 }
