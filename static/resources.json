@@ -247,6 +247,662 @@
       "sport": "NFL",
       "description": "Maintains nflverse - X/Twitter",
       "url": "https://x.com/mrcaseb"
+    },
+    {
+      "id": 32,
+      "name": "nflreadr",
+      "category": "Coding Packages",
+      "sport": "NFL",
+      "description": "Efficiently downloads pre-computed nflfastR data frames from GitHub",
+      "url": "https://CRAN.R-project.org/package=nflreadr"
+    },
+    {
+      "id": 33,
+      "name": "nfl4th",
+      "category": "Coding Packages",
+      "sport": "NFL",
+      "description": "Calculate optimal Fourth Down decisions in the National Football League",
+      "url": "https://CRAN.R-project.org/package=nfl4th"
+    },
+    {
+      "id": 34,
+      "name": "nflplotR",
+      "category": "Coding Packages",
+      "sport": "NFL",
+      "description": "Functions for making NFL data visualization in ggplot2 easier",
+      "url": "https://CRAN.R-project.org/package=nflplotR"
+    },
+    {
+      "id": 35,
+      "name": "NFLSimulatoR",
+      "category": "Coding Packages",
+      "sport": "NFL",
+      "description": "Tools for simulating plays and drives, and evaluating in-game strategies",
+      "url": "https://CRAN.R-project.org/package=NFLSimulatoR"
+    },
+    {
+      "id": 36,
+      "name": "ffscrapr",
+      "category": "Coding Packages",
+      "sport": "NFL",
+      "description": "Access fantasy football APIs including MFL, Sleeper, ESPN, and Fleaflicker",
+      "url": "https://CRAN.R-project.org/package=ffscrapr"
+    },
+    {
+      "id": 37,
+      "name": "cfbfastR",
+      "category": "Coding Packages",
+      "sport": "CFB",
+      "description": "Scrape college football play-by-play data from 2004 to present",
+      "url": "https://CRAN.R-project.org/package=cfbfastR"
+    },
+    {
+      "id": 38,
+      "name": "worldfootballR",
+      "category": "Coding Packages",
+      "sport": "Soccer",
+      "description": "Clean football data from FBref, Transfermarkt, Understat and fotmob",
+      "url": "https://CRAN.R-project.org/package=worldfootballR"
+    },
+    {
+      "id": 39,
+      "name": "ggsoccer",
+      "category": "Coding Packages",
+      "sport": "Soccer",
+      "description": "Functions for visualizing soccer event data in ggplot2",
+      "url": "https://CRAN.R-project.org/package=ggsoccer"
+    },
+    {
+      "id": 40,
+      "name": "footBayes",
+      "category": "Coding Packages",
+      "sport": "Soccer",
+      "description": "Fit soccer models (Poisson, Skellam, Student's t) and predict match outcomes",
+      "url": "https://CRAN.R-project.org/package=footBayes"
+    },
+    {
+      "id": 41,
+      "name": "itscalledsoccer",
+      "category": "Coding Packages",
+      "sport": "Soccer",
+      "description": "Access American soccer (MLS, NWSL, USL) data through ASA API",
+      "url": "https://CRAN.R-project.org/package=itscalledsoccer"
+    },
+    {
+      "id": 42,
+      "name": "Lahman",
+      "category": "Coding Packages",
+      "sport": "Baseball",
+      "description": "Historical MLB season-level data going back to 1871",
+      "url": "https://CRAN.R-project.org/package=Lahman"
+    },
+    {
+      "id": 43,
+      "name": "baseballr",
+      "category": "Coding Packages",
+      "sport": "Baseball",
+      "description": "Extract and analyze baseball data from Baseball Reference, FanGraphs, and Baseball Savant",
+      "url": "https://CRAN.R-project.org/package=baseballr"
+    },
+    {
+      "id": 44,
+      "name": "retrosheet",
+      "category": "Coding Packages",
+      "sport": "Baseball",
+      "description": "Download game logs, rosters, and play-by-play files from Retrosheet.org",
+      "url": "https://CRAN.R-project.org/package=retrosheet"
+    },
+    {
+      "id": 45,
+      "name": "mlbplotR",
+      "category": "Coding Packages",
+      "sport": "Baseball",
+      "description": "Tools for visualizing MLB analysis with ggplot2 and gt",
+      "url": "https://CRAN.R-project.org/package=mlbplotR"
+    },
+    {
+      "id": 46,
+      "name": "hoopR",
+      "category": "Coding Packages",
+      "sport": "Basketball",
+      "description": "Access men's college basketball and NBA data from ESPN and NBA Stats API",
+      "url": "https://CRAN.R-project.org/package=hoopR"
+    },
+    {
+      "id": 47,
+      "name": "wehoop",
+      "category": "Coding Packages",
+      "sport": "Basketball",
+      "description": "Access women's college basketball and WNBA data from ESPN and WNBA Stats API",
+      "url": "https://CRAN.R-project.org/package=wehoop"
+    },
+    {
+      "id": 48,
+      "name": "BasketballAnalyzeR",
+      "category": "Coding Packages",
+      "sport": "Basketball",
+      "description": "Data and functions to analyze and visualize basketball data",
+      "url": "https://CRAN.R-project.org/package=BasketballAnalyzeR"
+    },
+    {
+      "id": 49,
+      "name": "euroleaguer",
+      "category": "Coding Packages",
+      "sport": "Basketball",
+      "description": "Retrieve data from EuroLeague and EuroCup API",
+      "url": "https://CRAN.R-project.org/package=euroleaguer"
+    },
+    {
+      "id": 50,
+      "name": "fastRhockey",
+      "category": "Coding Packages",
+      "sport": "Hockey",
+      "description": "API wrappers for NHL and Professional Women's Hockey League (PWHL)",
+      "url": "https://CRAN.R-project.org/package=fastRhockey"
+    },
+    {
+      "id": 51,
+      "name": "nhlapi",
+      "category": "Coding Packages",
+      "sport": "Hockey",
+      "description": "Access to data exposed by the NHL API",
+      "url": "https://CRAN.R-project.org/package=nhlapi"
+    },
+    {
+      "id": 52,
+      "name": "cricketdata",
+      "category": "Coding Packages",
+      "sport": "Cricket",
+      "description": "Obtain international cricket data from ESPNCricinfo and Cricsheet",
+      "url": "https://CRAN.R-project.org/package=cricketdata"
+    },
+    {
+      "id": 53,
+      "name": "yorkr",
+      "category": "Coding Packages",
+      "sport": "Cricket",
+      "description": "Analyze statistics of cricket players and teams based on Cricsheet data",
+      "url": "https://CRAN.R-project.org/package=yorkr"
+    },
+    {
+      "id": 54,
+      "name": "f1dataR",
+      "category": "Coding Packages",
+      "sport": "Formula 1",
+      "description": "Historical F1 data from Ergast and lap-by-lap telemetry from 2018 onward",
+      "url": "https://CRAN.R-project.org/package=f1dataR"
+    },
+    {
+      "id": 55,
+      "name": "fitzRoy",
+      "category": "Coding Packages",
+      "sport": "Australian Rules Football",
+      "description": "Scrape and process Australian Football League (AFL) data",
+      "url": "https://CRAN.R-project.org/package=fitzRoy"
+    },
+    {
+      "id": 56,
+      "name": "teamcolors",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Color palettes, ggplot2 themes, and logos for professional sports teams",
+      "url": "https://CRAN.R-project.org/package=teamcolors"
+    },
+    {
+      "id": 57,
+      "name": "sportyR",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Create ggplot2 representations of sports playing surfaces for plotting tracking data",
+      "url": "https://CRAN.R-project.org/package=sportyR"
+    },
+    {
+      "id": 58,
+      "name": "BradleyTerry2",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Fit Bradley-Terry models to paired comparison data for rankings",
+      "url": "https://CRAN.R-project.org/package=BradleyTerry2"
+    },
+    {
+      "id": 59,
+      "name": "elo",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Methods for estimating the Elo rating in sports",
+      "url": "https://CRAN.R-project.org/package=elo"
+    },
+    {
+      "id": 60,
+      "name": "PlayerRatings",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Implementations of Elo, Glicko, Glicko-2, and Stephenson rating systems",
+      "url": "https://CRAN.R-project.org/package=PlayerRatings"
+    },
+    {
+      "id": 61,
+      "name": "gsisdecoder",
+      "category": "Coding Packages",
+      "sport": "NFL",
+      "description": "Decode NFL Player IDs for use with nflfastR",
+      "url": "https://CRAN.R-project.org/package=gsisdecoder"
+    },
+    {
+      "id": 62,
+      "name": "fastrmodels",
+      "category": "Coding Packages",
+      "sport": "NFL",
+      "description": "Models required by nflfastR for predictions",
+      "url": "https://CRAN.R-project.org/package=fastrmodels"
+    },
+    {
+      "id": 63,
+      "name": "socceR",
+      "category": "Coding Packages",
+      "sport": "Soccer",
+      "description": "Evaluate soccer predictions and simulate matches and tournaments",
+      "url": "https://CRAN.R-project.org/package=socceR"
+    },
+    {
+      "id": 64,
+      "name": "footballpenaltiesBL",
+      "category": "Coding Packages",
+      "sport": "Soccer",
+      "description": "Data and plotting for penalty kicks in German Bundesliga (1963-2017)",
+      "url": "https://CRAN.R-project.org/package=footballpenaltiesBL"
+    },
+    {
+      "id": 65,
+      "name": "FPLdata",
+      "category": "Coding Packages",
+      "sport": "Soccer",
+      "description": "Retrieve player attributes from Fantasy Premier League",
+      "url": "https://CRAN.R-project.org/package=FPLdata"
+    },
+    {
+      "id": 66,
+      "name": "EUfootball",
+      "category": "Coding Packages",
+      "sport": "Soccer",
+      "description": "European football match results for top leagues (2010-2020)",
+      "url": "https://CRAN.R-project.org/package=EUfootball"
+    },
+    {
+      "id": 67,
+      "name": "bundesligR",
+      "category": "Coding Packages",
+      "sport": "Soccer",
+      "description": "Final standings of German Bundesliga from 1964 to 2016",
+      "url": "https://CRAN.R-project.org/package=bundesligR"
+    },
+    {
+      "id": 68,
+      "name": "ggfootball",
+      "category": "Coding Packages",
+      "sport": "Soccer",
+      "description": "Scrape and visualize football match shots data from Understat",
+      "url": "https://CRAN.R-project.org/package=ggfootball"
+    },
+    {
+      "id": 69,
+      "name": "mlbstats",
+      "category": "Coding Packages",
+      "sport": "Baseball",
+      "description": "Vector-based computation of traditional and sabermetric baseball statistics",
+      "url": "https://CRAN.R-project.org/package=mlbstats"
+    },
+    {
+      "id": 70,
+      "name": "BAwiR",
+      "category": "Coding Packages",
+      "sport": "Basketball",
+      "description": "Collection of tools to analyze basketball data with focus on scraping and visualization",
+      "url": "https://CRAN.R-project.org/package=BAwiR"
+    },
+    {
+      "id": 71,
+      "name": "AdvancedBasketballStats",
+      "category": "Coding Packages",
+      "sport": "Basketball",
+      "description": "Calculate and analyze basketball statistics for players, teams, lineups, and plays",
+      "url": "https://CRAN.R-project.org/package=AdvancedBasketballStats"
+    },
+    {
+      "id": 72,
+      "name": "uncmbb",
+      "category": "Coding Packages",
+      "sport": "Basketball",
+      "description": "University of North Carolina Men's Basketball Results since 1949-50",
+      "url": "https://CRAN.R-project.org/package=uncmbb"
+    },
+    {
+      "id": 73,
+      "name": "NBAloveR",
+      "category": "Coding Packages",
+      "sport": "Basketball",
+      "description": "R interface to Basketball Reference API with analysis functions",
+      "url": "https://CRAN.R-project.org/package=NBAloveR"
+    },
+    {
+      "id": 74,
+      "name": "nblR",
+      "category": "Coding Packages",
+      "sport": "Basketball",
+      "description": "Play-by-play, shooting locations, and box scores for Australian NBL",
+      "url": "https://CRAN.R-project.org/package=nblR"
+    },
+    {
+      "id": 75,
+      "name": "ceblR",
+      "category": "Coding Packages",
+      "sport": "Basketball",
+      "description": "Box-score and play-by-play data from Canadian Elite Basketball League",
+      "url": "https://CRAN.R-project.org/package=ceblR"
+    },
+    {
+      "id": 76,
+      "name": "chess",
+      "category": "Coding Packages",
+      "sport": "Chess",
+      "description": "Wrapper for python-chess, reads and writes PGN files and SVGs",
+      "url": "https://CRAN.R-project.org/package=chess"
+    },
+    {
+      "id": 77,
+      "name": "bigchess",
+      "category": "Coding Packages",
+      "sport": "Chess",
+      "description": "Read/write PGN files, API to UCI engines, handles multiple files efficiently",
+      "url": "https://CRAN.R-project.org/package=bigchess"
+    },
+    {
+      "id": 78,
+      "name": "ChessGmooG",
+      "category": "Coding Packages",
+      "sport": "Chess",
+      "description": "FIDE Ratings for chess players for 2015 and 2020",
+      "url": "https://CRAN.R-project.org/package=ChessGmooG"
+    },
+    {
+      "id": 79,
+      "name": "cricketr",
+      "category": "Coding Packages",
+      "sport": "Cricket",
+      "description": "Analyze cricket performances based on ESPN Cricinfo Statsguru data",
+      "url": "https://CRAN.R-project.org/package=cricketr"
+    },
+    {
+      "id": 80,
+      "name": "howzatR",
+      "category": "Coding Packages",
+      "sport": "Cricket",
+      "description": "Functions for calculating various cricket statistics",
+      "url": "https://CRAN.R-project.org/package=howzatR"
+    },
+    {
+      "id": 81,
+      "name": "rbedrock",
+      "category": "Coding Packages",
+      "sport": "Esports",
+      "description": "Data analysis and management of Minecraft (Bedrock Edition)",
+      "url": "https://CRAN.R-project.org/package=rbedrock"
+    },
+    {
+      "id": 82,
+      "name": "ROpenDota",
+      "category": "Coding Packages",
+      "sport": "Esports",
+      "description": "Extract Dota2 data from OpenDota API",
+      "url": "https://CRAN.R-project.org/package=ROpenDota"
+    },
+    {
+      "id": 83,
+      "name": "opendotaR",
+      "category": "Coding Packages",
+      "sport": "Esports",
+      "description": "Extract Dota2 data from OpenDota API",
+      "url": "https://CRAN.R-project.org/package=opendotaR"
+    },
+    {
+      "id": 84,
+      "name": "RDota2",
+      "category": "Coding Packages",
+      "sport": "Esports",
+      "description": "Extract Dota2 data from Steam API",
+      "url": "https://CRAN.R-project.org/package=RDota2"
+    },
+    {
+      "id": 85,
+      "name": "trackeR",
+      "category": "Coding Packages",
+      "sport": "GPS Tracking",
+      "description": "Analyze running, cycling and swimming data from GPS-enabled devices",
+      "url": "https://CRAN.R-project.org/package=trackeR"
+    },
+    {
+      "id": 86,
+      "name": "trackeRapp",
+      "category": "Coding Packages",
+      "sport": "GPS Tracking",
+      "description": "App for analyzing workout data from GPS tracking devices",
+      "url": "https://CRAN.R-project.org/package=trackeRapp"
+    },
+    {
+      "id": 87,
+      "name": "rStrava",
+      "category": "Coding Packages",
+      "sport": "GPS Tracking",
+      "description": "Access Strava activity data from the Strava API",
+      "url": "https://CRAN.R-project.org/package=rStrava"
+    },
+    {
+      "id": 88,
+      "name": "Athlytics",
+      "category": "Coding Packages",
+      "sport": "GPS Tracking",
+      "description": "Fetch data via rStrava and calculate sports science metrics",
+      "url": "https://CRAN.R-project.org/package=Athlytics"
+    },
+    {
+      "id": 89,
+      "name": "NHLData",
+      "category": "Coding Packages",
+      "sport": "Hockey",
+      "description": "NHL game scores dating back to 1917, stored by season",
+      "url": "https://CRAN.R-project.org/package=NHLData"
+    },
+    {
+      "id": 90,
+      "name": "nhlscraper",
+      "category": "Coding Packages",
+      "sport": "Hockey",
+      "description": "Wrap NHL and ESPN endpoints, includes play-by-play logs and odds",
+      "url": "https://CRAN.R-project.org/package=nhlscraper"
+    },
+    {
+      "id": 91,
+      "name": "nrlR",
+      "category": "Coding Packages",
+      "sport": "Rugby",
+      "description": "Scrape rugby data including player stats, match results, and coaching data",
+      "url": "https://CRAN.R-project.org/package=nrlR"
+    },
+    {
+      "id": 92,
+      "name": "runexp",
+      "category": "Coding Packages",
+      "sport": "Softball",
+      "description": "Estimate runs scored in softball using Markov chains and simulation",
+      "url": "https://CRAN.R-project.org/package=runexp"
+    },
+    {
+      "id": 93,
+      "name": "SwimmeR",
+      "category": "Coding Packages",
+      "sport": "Swimming",
+      "description": "Read swimming results and convert times between SCY, SCM, and LCM",
+      "url": "https://CRAN.R-project.org/package=SwimmeR"
+    },
+    {
+      "id": 94,
+      "name": "combinedevents",
+      "category": "Coding Packages",
+      "sport": "Track and Field",
+      "description": "Calculate scores for combined events based on IAAF scoring tables",
+      "url": "https://CRAN.R-project.org/package=combinedevents"
+    },
+    {
+      "id": 95,
+      "name": "ncaavolleyballr",
+      "category": "Coding Packages",
+      "sport": "Volleyball",
+      "description": "Extract team records and player statistics for NCAA volleyball",
+      "url": "https://CRAN.R-project.org/package=ncaavolleyballr"
+    },
+    {
+      "id": 96,
+      "name": "colorr",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Color palettes for EPL, MLB, NBA, NHL, and NFL teams",
+      "url": "https://CRAN.R-project.org/package=colorr"
+    },
+    {
+      "id": 97,
+      "name": "nbapalettes",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Color palettes inspired by NBA team jersey colors",
+      "url": "https://CRAN.R-project.org/package=nbapalettes"
+    },
+    {
+      "id": 98,
+      "name": "gameR",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Color palettes inspired by video games",
+      "url": "https://CRAN.R-project.org/package=gameR"
+    },
+    {
+      "id": 99,
+      "name": "SportsTour",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Display tournament fixtures using knock-out and round robin methods",
+      "url": "https://CRAN.R-project.org/package=SportsTour"
+    },
+    {
+      "id": 100,
+      "name": "ProSportsDraftData",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Draft data for NFL, NBA, and NHL",
+      "url": "https://CRAN.R-project.org/package=ProSportsDraftData"
+    },
+    {
+      "id": 101,
+      "name": "injurytools",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Analyze, visualize, and model sports injuries",
+      "url": "https://CRAN.R-project.org/package=injurytools"
+    },
+    {
+      "id": 102,
+      "name": "ISAR",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Datasets from 'Introduction to Sports Analytics using R' textbook",
+      "url": "https://CRAN.R-project.org/package=ISAR"
+    },
+    {
+      "id": 103,
+      "name": "oddsapiR",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Access sports odds from The Odds API",
+      "url": "https://CRAN.R-project.org/package=oddsapiR"
+    },
+    {
+      "id": 104,
+      "name": "odds.converter",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Convert between different sports betting odds types",
+      "url": "https://CRAN.R-project.org/package=odds.converter"
+    },
+    {
+      "id": 105,
+      "name": "implied",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Convert between bookmaker odds and probabilities",
+      "url": "https://CRAN.R-project.org/package=implied"
+    },
+    {
+      "id": 106,
+      "name": "pinnacle.data",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Pinnacle market odds including 2016 MLB season wagering lines",
+      "url": "https://CRAN.R-project.org/package=pinnacle.data"
+    },
+    {
+      "id": 107,
+      "name": "RKelly",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Compute Kelly criterion for betting and outcome probabilities",
+      "url": "https://CRAN.R-project.org/package=RKelly"
+    },
+    {
+      "id": 108,
+      "name": "welo",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Weighted Elo rating system for sports",
+      "url": "https://CRAN.R-project.org/package=welo"
+    },
+    {
+      "id": 109,
+      "name": "EloOptimized",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Optimized Elo rating implementation",
+      "url": "https://CRAN.R-project.org/package=EloOptimized"
+    },
+    {
+      "id": 110,
+      "name": "EloChoice",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Elo ratings for choice data",
+      "url": "https://CRAN.R-project.org/package=EloChoice"
+    },
+    {
+      "id": 111,
+      "name": "EloRating",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Animal dominance hierarchies by Elo rating",
+      "url": "https://CRAN.R-project.org/package=EloRating"
+    },
+    {
+      "id": 112,
+      "name": "piratings",
+      "category": "Coding Packages",
+      "sport": "Soccer",
+      "description": "Pi-ratings for determining team ability in association football",
+      "url": "https://CRAN.R-project.org/package=piratings"
+    },
+    {
+      "id": 113,
+      "name": "mvglmmRank",
+      "category": "Coding Packages",
+      "sport": "All sports",
+      "description": "Multivariate generalized linear mixed models for ranking teams",
+      "url": "https://CRAN.R-project.org/package=mvglmmRank"
     }
   ]
 }
