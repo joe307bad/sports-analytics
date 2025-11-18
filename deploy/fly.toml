@@ -7,7 +7,7 @@ app = 'sports-analytics'
 primary_region = 'fra'
 
 [build]
-  dockerfile = "deploy/Dockerfile"
+  dockerfile = "Dockerfile"
 
 [http_service]
   internal_port = 8080
