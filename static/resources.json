@@ -943,6 +943,14 @@
       "sport": "Soccer",
       "description": "Advanced soccer analytics with the largest database in the world of football",
       "url": "https://www.besoccer.com/"
+    },
+    {
+      "id": 119,
+      "name": "Boxing Data",
+      "category": "Websites",
+      "sport": "Boxing",
+      "description": "Access the most complete Boxing data - from upcoming fights and fighter stats to live results and punch-by-punch analysis",
+      "url": "https://boxing-data.com/"
     }
   ]
 }
