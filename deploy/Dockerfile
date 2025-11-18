@@ -3,16 +3,16 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-# Copy package files
-COPY package.json yarn.lock* package-lock.json* ./
+# Copy package files from parent directory
+COPY ../package.json ../yarn.lock* ../package-lock.json* ./
 
 # Install dependencies
 RUN if [ -f yarn.lock ]; then yarn install --frozen-lockfile; \
     elif [ -f package-lock.json ]; then npm ci; \
     else npm install; fi
 
-# Copy source files
-COPY . .
+# Copy source files from parent directory
+COPY ../ .
 
 # Build the site
 RUN npm run build
@@ -23,7 +23,7 @@ FROM nginx:alpine
 # Copy built files to nginx
 COPY --from=builder /app/build /usr/share/nginx/html
 
-# Copy nginx configuration
+# Copy nginx configuration from deploy directory
 COPY nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 8080
