@@ -23,6 +23,11 @@
   font-size: 1.5rem;
   font-weight: 600;
   width: 100%;
+  white-space: nowrap;
+
+  @media (max-width: 768px) {
+    font-size: 1.0rem;
+  }
 }
 
 .filterInput {
