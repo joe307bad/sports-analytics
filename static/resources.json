@@ -919,6 +919,30 @@
       "sport": "Darts",
       "description": "Darts Database is the ultimate source for darts results",
       "url": "https://dartsdatabase.co.uk"
+    },
+    {
+      "id": 116,
+      "name": "CFB Graphs",
+      "category": "Websites",
+      "sport": "CFB",
+      "description": "Advanced college football analytics",
+      "url": "https://www.cfb-graphs.com"
+    },
+    {
+      "id": 117,
+      "name": "BCF Toys",
+      "category": "Websites",
+      "sport": "CFB",
+      "description": "Advanced college football data analysis",
+      "url": "https://bcftoys.com"
+    },
+    {
+      "id": 118,
+      "name": "BeSoccer",
+      "category": "Websites",
+      "sport": "Soccer",
+      "description": "Advanced soccer analytics with the largest database in the world of football",
+      "url": "https://www.besoccer.com/"
     }
   ]
 }

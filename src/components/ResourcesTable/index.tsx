@@ -26,6 +26,19 @@ const defaultData: Resource[] = resourcesData.resources;
 
 const columnHelper = createColumnHelper<Resource>();
 
+const globalFilterFn = (row: any, _columnId: string, filterValue: string) => {
+  const searchValue = filterValue.toLowerCase();
+  const resource = row.original as Resource;
+
+  return (
+    resource.name.toLowerCase().includes(searchValue) ||
+    resource.description.toLowerCase().includes(searchValue) ||
+    resource.category.toLowerCase().includes(searchValue) ||
+    resource.sport.toLowerCase().includes(searchValue) ||
+    resource.url.toLowerCase().includes(searchValue)
+  );
+};
+
 const columns = [
   columnHelper.accessor('name', {
     header: 'Name',
@@ -58,6 +71,10 @@ const columns = [
         {info.getValue()}
       </a>
     ),
+  }),
+  columnHelper.display({
+    id: 'globalFilter',
+    filterFn: globalFilterFn,
   }),
 ];
 
@@ -100,7 +117,7 @@ export default function ResourcesTable(): React.ReactElement {
   // Build columnFilters from individual filter states - must be computed synchronously
   const columnFilters = React.useMemo(() => {
     const filters: ColumnFiltersState = [];
-    if (nameFilter) filters.push({ id: 'name', value: nameFilter });
+    if (nameFilter) filters.push({ id: 'globalFilter', value: nameFilter });
     if (categoryFilter) filters.push({ id: 'category', value: categoryFilter });
     if (sportFilter) filters.push({ id: 'sport', value: sportFilter });
     return filters;
@@ -156,13 +173,15 @@ export default function ResourcesTable(): React.ReactElement {
     setSportFilter('');
   };
 
+  const filteredRowCount = table.getFilteredRowModel().rows.length;
+
   return (
     <div className={styles.tableContainer}>
       <div className={styles.filters}>
-        <h2 className={styles.resourcesTitle}>Resources</h2>
+        <h2 className={styles.resourcesTitle}>Resources ({filteredRowCount})</h2>
         <input
           type="text"
-          placeholder="Filter by name..."
+          placeholder="Search all fields..."
           value={nameFilter}
           onChange={e => setNameFilter(e.target.value)}
           className={styles.filterInput}
