@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Sports Analytics',
+  title: 'Sports Analytics Resources',
   tagline: 'Curated collection of sports analytics tools and resources',
   favicon: 'img/favicon.ico',
 
@@ -27,7 +27,7 @@ const config: Config = {
       tagName: 'meta',
       attributes: {
         property: 'og:title',
-        content: 'Sports Analytics - Curated Tools & Resources',
+        content: 'Sports Analytics Resources - Curated tools, apps, websites and more',
       },
     },
     {
@@ -55,7 +55,7 @@ const config: Config = {
       tagName: 'meta',
       attributes: {
         property: 'og:site_name',
-        content: 'Sports Analytics',
+        content: 'Sports Analytics Resources',
       },
     },
     // Twitter/X Card meta tags
@@ -70,7 +70,7 @@ const config: Config = {
       tagName: 'meta',
       attributes: {
         name: 'twitter:title',
-        content: 'Sports Analytics - Curated Tools & Resources',
+        content: 'Sports Analytics Resources - Curated tools, apps, websites and more',
       },
     },
     {
@@ -117,9 +117,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Sports Analytics',
+      title: 'Sports Analytics Resources',
       logo: {
-        alt: 'Sports Analytics Logo',
+        alt: 'Sports Analytics Resources Logo',
         src: 'img/logo.png',
       },
       items: [

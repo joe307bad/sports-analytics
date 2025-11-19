@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Real - Social live sports (Android)",
       "category": "Apps",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Social live sports app for Android",
       "url": "https://play.google.com/store/apps/details?id=vg.real&hl=en_US"
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "name": "Real - Social live sports (iOS)",
       "category": "Apps",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Social live sports app for iOS",
       "url": "https://apps.apple.com/us/app/real-sports/id1514546162"
     },
@@ -20,7 +20,7 @@
       "id": 3,
       "name": "Plain Text Sports",
       "category": "Websites",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Fast, ad free box scores",
       "url": "https://plaintextsports.com/"
     },
@@ -28,7 +28,7 @@
       "id": 4,
       "name": "StatMuse",
       "category": "Websites",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Query stats using natural language",
       "url": "https://statmuse.com"
     },
@@ -36,7 +36,7 @@
       "id": 5,
       "name": "Inpredictable",
       "category": "Websites",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Comprehensive rankings and stats for many sports",
       "url": "https://www.inpredictable.com"
     },
@@ -44,7 +44,7 @@
       "id": 6,
       "name": "DSA Labs",
       "category": "Websites",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Rankings and simulators for many major sports",
       "url": "https://www.dsa-labs.com/rankings"
     },
@@ -132,7 +132,7 @@
       "id": 17,
       "name": "Sports Data Verse",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Open source sports analytics and data organization",
       "url": "https://www.sportsdataverse.org/"
     },
@@ -140,7 +140,7 @@
       "id": 18,
       "name": "CRAN Sports Analytics",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Comprehensive list of R packages targeted at sports analytics",
       "url": "https://cran.r-project.org/web/views/SportsAnalytics.html"
     },
@@ -188,7 +188,7 @@
       "id": 24,
       "name": "Michael MacKelvie",
       "category": "Accounts to follow",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "YouTube channel",
       "url": "https://www.youtube.com/channel/UCkv6xZ98rkJjHZLtYlAqJmg"
     },
@@ -444,7 +444,7 @@
       "id": 56,
       "name": "teamcolors",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Color palettes, ggplot2 themes, and logos for professional sports teams",
       "url": "https://CRAN.R-project.org/package=teamcolors"
     },
@@ -452,7 +452,7 @@
       "id": 57,
       "name": "sportyR",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Create ggplot2 representations of sports playing surfaces for plotting tracking data",
       "url": "https://CRAN.R-project.org/package=sportyR"
     },
@@ -460,7 +460,7 @@
       "id": 58,
       "name": "BradleyTerry2",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Fit Bradley-Terry models to paired comparison data for rankings",
       "url": "https://CRAN.R-project.org/package=BradleyTerry2"
     },
@@ -468,7 +468,7 @@
       "id": 59,
       "name": "elo",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Methods for estimating the Elo rating in sports",
       "url": "https://CRAN.R-project.org/package=elo"
     },
@@ -476,7 +476,7 @@
       "id": 60,
       "name": "PlayerRatings",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Implementations of Elo, Glicko, Glicko-2, and Stephenson rating systems",
       "url": "https://CRAN.R-project.org/package=PlayerRatings"
     },
@@ -764,7 +764,7 @@
       "id": 96,
       "name": "colorr",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Color palettes for EPL, MLB, NBA, NHL, and NFL teams",
       "url": "https://CRAN.R-project.org/package=colorr"
     },
@@ -772,7 +772,7 @@
       "id": 97,
       "name": "nbapalettes",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Color palettes inspired by NBA team jersey colors",
       "url": "https://CRAN.R-project.org/package=nbapalettes"
     },
@@ -780,7 +780,7 @@
       "id": 98,
       "name": "gameR",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Color palettes inspired by video games",
       "url": "https://CRAN.R-project.org/package=gameR"
     },
@@ -788,7 +788,7 @@
       "id": 99,
       "name": "SportsTour",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Display tournament fixtures using knock-out and round robin methods",
       "url": "https://CRAN.R-project.org/package=SportsTour"
     },
@@ -796,7 +796,7 @@
       "id": 100,
       "name": "ProSportsDraftData",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Draft data for NFL, NBA, and NHL",
       "url": "https://CRAN.R-project.org/package=ProSportsDraftData"
     },
@@ -804,7 +804,7 @@
       "id": 101,
       "name": "injurytools",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Analyze, visualize, and model sports injuries",
       "url": "https://CRAN.R-project.org/package=injurytools"
     },
@@ -812,7 +812,7 @@
       "id": 102,
       "name": "ISAR",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Datasets from 'Introduction to Sports Analytics using R' textbook",
       "url": "https://CRAN.R-project.org/package=ISAR"
     },
@@ -820,7 +820,7 @@
       "id": 103,
       "name": "oddsapiR",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Access sports odds from The Odds API",
       "url": "https://CRAN.R-project.org/package=oddsapiR"
     },
@@ -828,7 +828,7 @@
       "id": 104,
       "name": "odds.converter",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Convert between different sports betting odds types",
       "url": "https://CRAN.R-project.org/package=odds.converter"
     },
@@ -836,7 +836,7 @@
       "id": 105,
       "name": "implied",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Convert between bookmaker odds and probabilities",
       "url": "https://CRAN.R-project.org/package=implied"
     },
@@ -844,7 +844,7 @@
       "id": 106,
       "name": "pinnacle.data",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Pinnacle market odds including 2016 MLB season wagering lines",
       "url": "https://CRAN.R-project.org/package=pinnacle.data"
     },
@@ -852,7 +852,7 @@
       "id": 107,
       "name": "RKelly",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Compute Kelly criterion for betting and outcome probabilities",
       "url": "https://CRAN.R-project.org/package=RKelly"
     },
@@ -860,7 +860,7 @@
       "id": 108,
       "name": "welo",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Weighted Elo rating system for sports",
       "url": "https://CRAN.R-project.org/package=welo"
     },
@@ -868,7 +868,7 @@
       "id": 109,
       "name": "EloOptimized",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Optimized Elo rating implementation",
       "url": "https://CRAN.R-project.org/package=EloOptimized"
     },
@@ -876,7 +876,7 @@
       "id": 110,
       "name": "EloChoice",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Elo ratings for choice data",
       "url": "https://CRAN.R-project.org/package=EloChoice"
     },
@@ -884,7 +884,7 @@
       "id": 111,
       "name": "EloRating",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Animal dominance hierarchies by Elo rating",
       "url": "https://CRAN.R-project.org/package=EloRating"
     },
@@ -900,7 +900,7 @@
       "id": 113,
       "name": "mvglmmRank",
       "category": "Coding Packages",
-      "sport": "All sports",
+      "sport": "Multiple sports",
       "description": "Multivariate generalized linear mixed models for ranking teams",
       "url": "https://CRAN.R-project.org/package=mvglmmRank"
     },
@@ -951,6 +951,14 @@
       "sport": "Boxing",
       "description": "Access the most complete Boxing data - from upcoming fights and fighter stats to live results and punch-by-punch analysis",
       "url": "https://boxing-data.com/"
+    },
+    {
+      "id": 120,
+      "name": "Sports Info Solutions",
+      "category": "Websites",
+      "sport": "Multiple sports",
+      "description": "Data provider for analytics for baseball, basketball and football",
+      "url": "https://www.sportsinfosolutions.com/"
     }
   ]
 }

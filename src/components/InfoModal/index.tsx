@@ -24,7 +24,7 @@ export default function InfoModal({ isOpen, onClose }: InfoModalProps): React.Re
         <h2>What is this?</h2>
         <div className={styles.modalBody}>
           <p>
-            <strong>Sports Analytics</strong> is a curated collection of tools and resources for sports data analysis,
+            <strong>Sports Analytics Resources</strong> is a curated collection of tools, apps, websites and more for sports data analysis,
             visualization, and insights.
           </p>
           <p>
@@ -35,6 +35,7 @@ export default function InfoModal({ isOpen, onClose }: InfoModalProps): React.Re
             <li><strong>Python Libraries</strong> - Data analysis and machine learning tools</li>
             <li><strong>Websites</strong> - Online resources, APIs, and data sources</li>
             <li><strong>Tools</strong> - Visualization and analysis platforms</li>
+            <li><strong>And much more!</strong></li>
           </ul>
           <p>
             Use the filters to find resources by sport (e.g., Basketball, Football, Soccer) or category.
