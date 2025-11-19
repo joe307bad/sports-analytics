@@ -1,4 +1,4 @@
-# Sports Analytics
+# Sports Analytics Resources
 
 A curated collection of sports analytics tools and resources for data analysis, visualization, and insights.
 
